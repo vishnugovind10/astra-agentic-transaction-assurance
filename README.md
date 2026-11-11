@@ -96,7 +96,7 @@ Astra is a new integration product informed by the owner's independent public re
 The intended website is generated from this repository and deployed to Vercel. It will include the product landing page, interactive assurance demo, transaction explorer, architecture, developer documentation and portfolio lineage.
 
 - **Vercel production URL:** not deployed yet.
-- **GitHub repository:** https://github.com/vishnugovind10/astra-agentic-transaction-assurance (target URL; repository publication is pending creation of the remote repository).
+- **GitHub repository:** https://github.com/vishnugovind10/astra-agentic-transaction-assurance (public repository; documentation-only pre-build snapshot).
 
 No deployment URL or contract address will be fabricated.
 
@@ -115,3 +115,4 @@ This document set is an architecture and pre-build specification, not a producti
 ## License
 
 License selection is intentionally deferred until the owner confirms the intended code and documentation licensing. Do not assume the repository is licensed for reuse before a `LICENSE` file is added.
+
