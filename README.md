@@ -70,7 +70,7 @@ These values are taken from the official challenge page and must be rechecked ag
 |---|---|
 | Network | QDay Aevum Testnet |
 | Chain ID | `44005` |
-| RPC | `https://rpc-test.qday.info` (verify against official docs/starter kit) |
+| RPC | `https://rpc-test.qday.info` (verified by read-only chain ID call on 11 Nov 2026; recheck at kickoff) |
 | Stablecoin | tUSD8 |
 | tUSD8 decimals | 6 |
 | tUSD8 contract | `0x456569838f1d43009A91ebA4263147Afd7233483` |
@@ -79,6 +79,8 @@ These values are taken from the official challenge page and must be rechecked ag
 | Demo Day | 15 Dec 2026 |
 
 Official challenge: https://qday.io/builder-challenge
+
+Pre-build readiness specifications: [Readiness Audit](docs/READINESS_AUDIT.md), [Aevum Testnet Readiness](docs/QDAY_TESTNET_READINESS.md), [Implementation Specification](docs/IMPLEMENTATION_SPEC.md), [Adversarial Test Plan](docs/ADVERSARIAL_TEST_PLAN.md), [UX Specification](docs/UX_SPEC.md), [Demo Script](docs/DEMO_SCRIPT.md), and [Build-Window Runbook](docs/BUILD_WINDOW_RUNBOOK.md). These are specifications only; competition implementation begins in the official build window.
 
 ## Existing architectural lineage
 

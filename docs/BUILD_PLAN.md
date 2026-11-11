@@ -30,10 +30,10 @@ Do not add competition implementation code, executable tests, contract source, f
 ## 3. Implementation window
 
 ### Phase 1 — Foundation (16–18 Nov)
-- Inspect official starter kit and verify RPC/chain/token details.
-- Create the application and contract implementation from scratch.
-- Define typed transaction envelope and domain invariants.
-- Deploy a minimal test registry/mandate/settlement contract to Aevum.
+- Follow `BUILD_WINDOW_RUNBOOK.md`; inspect current starter kit and reverify official network/token details.
+- Resolve whether QDay's testnet ERC-4337/session-key/paymaster and x402 features are practically usable; official marketing/build and wiki pages conflict, and the wiki does not publish Aevum EntryPoint/bundler details.
+- Create application implementation from scratch and define the canonical transaction envelope/domain invariants.
+- Start without custom Astra contracts: first slice uses user-controlled direct ERC-20 transfer and independent evidence verification. Reconsider a contract only if a concrete enforcement requirement requires it.
 
 ### Phase 2 — Assurance (19–23 Nov)
 - Implement signed provider offer and payee binding.
@@ -62,7 +62,7 @@ Do not add competition implementation code, executable tests, contract source, f
 
 ## 4. Priority order
 
-P0 — actual Aevum tUSD8 transfer with exact mandate constraints.
+P0 — actual Aevum tUSD8 transfer with exact user-confirmed intent and independent post-transfer verification.
 P1 — payee binding, quote integrity and one-time claim.
 P2 — consequence verification, finality/reconciliation and evidence.
 P3 — FinOps record and adversarial UI.

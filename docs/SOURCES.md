@@ -7,6 +7,13 @@ This is a curated source list for the pre-build architecture. Check versions, cu
 - QDay Aevum Builder Challenge: https://qday.io/builder-challenge
 - QDay official site and developer details: https://qday.io/
 - Aevum Testnet RPC shown on QDay site: https://rpc-test.qday.info
+- QDay build guide: https://qday.io/build
+- QDay Aevum network configuration: https://wiki.qday.info/Knowledge/technical/developer-guide/network-configuration/
+- QDay wallet guide: https://wiki.qday.info/guide/start/add-network
+- QDay token list: https://wiki.qday.info/Knowledge/reference/tokens
+- QDay smart account/session-key guide (availability status conflicts across official pages): https://wiki.qday.info/Knowledge/technical/developer-guide/erc-4337-development/
+- QDay agent development guide (availability status conflicts across official pages): https://wiki.qday.info/Knowledge/technical/developer-guide/ai-agent-development/
+- QDay Aevum Builder Challenge starter kit (8-page PDF): https://drive.google.com/file/d/1QvkDX_lgbnKh4wZHc-gWMpWsn8YdHCOu/view?usp=sharing
 
 ## BCNL / AI House event
 

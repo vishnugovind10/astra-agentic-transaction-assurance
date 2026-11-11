@@ -47,3 +47,11 @@
 **Decision:** This pre-build snapshot contains documentation only.
 
 **Reason:** The official challenge page states all competition code must be written during the build period. Re-check the starter kit on opening day.
+
+## ADR-009 — No custom Astra contract in the first vertical slice
+
+**Decision:** The first demo uses a human-confirmed direct tUSD8 transfer from a user-controlled test wallet, with off-chain deterministic checks, a unique claim, chain receipt verification, and explicit evidence states. It does not deploy an Astra registry, mandate, or settlement contract.
+
+**Reason:** The challenge needs one real Aevum payment; a new contract and token allowance are not required to demonstrate exact-intent/evidence comparison. QDay public marketing/build pages and developer wiki conflict on whether testnet session-key/x402 infrastructure is live, and the wiki leaves key Aevum endpoints/addresses unpublished. A custom contract would add risk without a demonstrated need. Recheck the native option at kickoff before implementation.
+
+**Boundary:** This does not technically prevent an agent with unrestricted EOA signing authority from bypassing Astra. If the intended demo requires autonomous execution constrained on-chain, revise this decision before coding and evaluate a narrowly scoped enforcement contract with explicit recovery and security tests.

@@ -75,7 +75,7 @@ Astra's canonical object is the `AgentTransactionEnvelope`. It binds buyer, sell
 
 ## 3. Canonical amount rules
 
-All on-chain token amounts use integer atomic units. For tUSD8, decimals are six. Never use binary floating-point for transfer amounts, balances or exposure invariants. Off-chain currency conversions must use fixed-precision decimals and retain source rate, source timestamp and currency pair.
+All on-chain token amounts use integer atomic units. QDay states tUSD8 has six decimals, and a read-only `decimals()` call returned 6 on 11 November 2026; recheck contract address and metadata at kickoff. Never use binary floating-point for transfer amounts, balances or exposure invariants. Off-chain currency conversions must use fixed-precision decimals and retain source rate, source timestamp and currency pair.
 
 ## 4. Exposure accounting
 
@@ -135,3 +135,7 @@ Every evidence item includes source, issuer, signature/verification method, subj
 - acceptance under the transaction's policy.
 
 A signed service receipt can establish attribution to a provider key, but does not independently prove service quality or correctness.
+
+## 8. Authoritative pre-build specification
+
+See [Implementation Specification](IMPLEMENTATION_SPEC.md) for the complete required groups, canonicalisation, signature boundaries, expiry, replay/idempotency, atomic-unit handling, module responsibilities, and end-to-end evidence. See [Lifecycle and Recovery](STATE_MACHINE.md) for transitions and recovery behavior. These documents specify behavior; they do not contain executable schema or code.

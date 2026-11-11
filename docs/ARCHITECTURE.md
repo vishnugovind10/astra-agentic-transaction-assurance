@@ -87,10 +87,11 @@ Adapters must be narrow and versioned. A provider adapter converts an external i
 
 ## 7. Failure handling
 
-- Demonstrated violation: NO_GO / DENY.
-- Required evidence missing or stale: ABSTAIN.
-- Policy constraint can be satisfied by reducing amount/scope: CONSTRAIN.
-- Legitimate request exceeds autonomous authority: REQUIRE_HUMAN.
-- Payment submitted but not final: PENDING.
-- Chain event and commercial ledger disagree: EXCEPTION.
-- Full technical checks pass: GO / ASSURED, subject to clearly stated service-evidence limits.
+- Before execution: use only `ALLOW`, `CONSTRAIN`, `REQUIRE_HUMAN`, `DENY`, or `ABSTAIN` for policy outcomes.
+- During execution: use lifecycle states such as `SUBMITTED`, `PENDING`, `FAILED`, and `CONFIRMED`.
+- After execution: use `GO`, `NO_GO`, or `ABSTAIN` for consequence assessment, and `EXCEPTION` as an operational case state.
+- Do not use `GO` and `ASSURED` as synonyms or let a payment receipt imply service completion. See [Lifecycle and Recovery](STATE_MACHINE.md).
+
+## 8. First-slice implementation boundary
+
+See [Implementation Specification](IMPLEMENTATION_SPEC.md). The initial demo deliberately uses a user-controlled direct tUSD8 transfer and does not deploy custom Astra contracts. The UI/off-chain checks do not constrain an unrestricted key from transferring outside Astra. Do not claim on-chain mandate enforcement. Revisit only if the actual execution model requires autonomous delegated signing with enforceable on-chain scope.
